@@ -1,0 +1,59 @@
+﻿<!-- All Rights Reserved ,Copyright(c) Fujitsu Learning Media Limited -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>販売支援システム</title>
+</head>
+
+<body>
+	<!-- 見出し -->
+	<div align="center">
+		<h2>販売支援システム</h2><br>
+		<h3>メニュー</h3><br>
+	</div>
+
+	<!-- メニュー -->
+	<!-- フォーム -->
+	<form action="/SearchItemSample/jsys" method="POST" name="fm">
+		<div align="center">
+			<!-- ボタンID用フィールド -->
+			<input type="hidden" name="BUTTON_ID" value="">
+			<b>商品管理システム</b><br><br>
+				<input type="button" value="商品検索"
+					onclick="document.fm.BUTTON_ID.value='UC000_01_01'; document.fm.submit()">
+				<br><br>
+		</div>
+		<div align="center">
+			<b>得意先管理システム</b><br><br>
+				<input type="button" value="得意先検索"
+					onclick="document.fm.BUTTON_ID.value='UC000_02_01'; document.fm.submit()">
+				<br><br>
+		</div>
+		<div align="center">
+			<b>得意先一覧</b><br><br>
+				<input type="button" value="得意先一覧を表示"
+					onclick="document.fm.BUTTON_ID.value='UC000_03_01'; document.fm.submit()">
+				<br><br>
+		</div>
+				<div align="center">
+			<b>得意先を登録</b><br><br>
+				<input type="button" value="得意先を登録"
+					onclick="document.fm.BUTTON_ID.value='UC000_06_01'; document.fm.submit()">
+				<br><br>
+		</div>
+		<div align="center">
+			<b>得意先情報を変更</b><br><br>
+				<input type="button" value="得意先一覧を更新"
+					onclick="document.fm.BUTTON_ID.value='UC000_04_01'; document.fm.submit()">
+				<br><br>
+		</div>
+		<div align="center">
+			<b>得意先情報を削除</b><br><br>
+				<input type="button" value="得意先一覧を削除"
+					onclick="document.fm.BUTTON_ID.value='UC000_05_01'; document.fm.submit()">
+				<br><br>
+		</div>
+	</form>
+</body>
+</html>
